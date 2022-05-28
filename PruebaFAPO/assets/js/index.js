@@ -19,8 +19,10 @@ function addPerson(){
     
 }
 
+
+
 function calcular(){
-    let fila = document.querySelectorAll("#people-list tbody tr");
+    let Total = document.getElementById("subtotal");
     let row = productTableBody.insertRow();
     let colTotalText = row.insertCell(0);
     let colEmptya = row.insertCell(1);
@@ -31,22 +33,9 @@ function calcular(){
     colEmptya.innerHTML = "";
     colEmptyB.innerHTML = "";
     
-
-    filas.forEach(function(e) {
- 
-        // obtenemos las columnas de cada fila
-        var columnas=e.querySelectorAll("th");
- 
-        // obtenemos los valores de la cantidad y importe
-        var cantidad=parseFloat(columnas[1].textContent);
-        var importe=parseFloat(columnas[2].textContent);
- 
-        // mostramos el total por fila
-        columnas[3].textContent=(cantidad*importe).toFixed(2);
- 
-        total+=cantidad*importe;
-    })
-    colTotal.innerHTML=total;
+    colTotal.innerHTML = Total;
+    
+    
 }
 
 function deleteProduct(sender){
