@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de uso de javascript</title>
+    <link href="assets/css/site.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/common/util.datetime.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Sistema de Facturacion, Bienvenido</h1>
+    </header>
+    <section>
+        <div id="container">
+            <form>
+                <fieldset>
+                    <legend>INGRESE SUS DATOS</legend>
+                    <label>Producto</label><br>
+                    <select name="products" id="products" class="form-control">
+                        <option value="Arroz">Arroz</option>
+                        <option value="Frijoles">Frijoles</option>
+                        <option value="Aceite">Aceite</option>
+                      </select>
+                    <label>Cantidad</label><br>
+                    <input id="quantity" type="number" class="form-control" min="0" max="99"><br>
+                    <label>Precio</label><br>
+                    <input id="price" type="number" class="form-control" min="0"><br>
+                    <button type="button" id="add-product">Agregar</button>
+                    <button type="button" id="calculate">Calcular</button>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        DESCRIPCION
+                    </legend>
+                    <table id="people-list" class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Producto
+                                </th>
+                                <th>
+                                    Cantidad
+                                </th>
+                                <th>
+                                    Precio
+                                </th>
+                                <th>
+                                    Subtotal
+                                </th>
+                                <th>
+                                    
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <script src="assets/js/index.js" type="text/javascript"></script>
+</body>
+</html>
